@@ -4,8 +4,13 @@ body {
   background: linear-gradient(left, #1382A4,#0e8db5);
 }
 .letra{
-  font-size: 23px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 41px;
+  text-align: center;
 }
+
+
 .difficulty {
   color: white;
 }

@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 
     <title>Spelling_Bee</title>
@@ -35,11 +36,11 @@
           Change difficulty
         </a>
         <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item difficulty" href="#">Easy</a>
-          <a class="dropdown-item difficulty" href="#">Normal</a>
-          <a class="dropdown-item difficulty" href="#">Hard</a>
+          <a class="dropdown-item difficulty" href="#">BASIC</a>
+          <a class="dropdown-item difficulty" href="#">INTERMEDIATE</a>
+          <a class="dropdown-item difficulty" href="#">ADVANCED</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item difficulty" href="#">Random</a>
+          <a class="dropdown-item difficulty" href="#">RANDOM</a>
         </div>
       </li>
     
@@ -68,7 +69,7 @@ Exercise your word recognition with an extensive vocabulary useful for daily lif
 
 
 
-<!--main role="main">
+<main role="main" id="mainCards">
 
   
 
@@ -125,7 +126,7 @@ Exercise your word recognition with an extensive vocabulary useful for daily lif
         </div>
       </div>
 
-    </main-->
+    </main>
 
 
 
@@ -135,10 +136,10 @@ Exercise your word recognition with an extensive vocabulary useful for daily lif
 <div id="selector" class="container" style="display:none;">
   <h1 class="lab">Choose your difilcuty</h1><hr>
   <div class="card bg-dark" style="width: 18rem; padding: 20px">
-  <button type="button" class="btn btn-primary" onclick="ocultarSelector()">Easy</button><hr>
-  <button type="button" class="btn btn-warning" onclick="ocultarSelector()">Normal</button><hr>
-  <button type="button" class="btn btn-danger" onclick="ocultarSelector()">Hard</button><hr>
-  <button type="button" class="btn btn-light" onclick="ocultarSelector()">Random</button>
+  <button type="button" class="btn btn-primary" onclick="ocultarSelector('BASIC')">BASIC</button><hr>
+  <button type="button" class="btn btn-warning" onclick="ocultarSelector('INTERMEDIATE')">INTERMEDIATE</button><hr>
+  <button type="button" class="btn btn-danger" onclick="ocultarSelector('ADVANCED')">ADVANCED</button><hr>
+  <button type="button" class="btn btn-light" onclick="ocultarSelector('RANDOM')">RANDOM</button>
   </div>
 </div>
 
@@ -159,38 +160,38 @@ Exercise your word recognition with an extensive vocabulary useful for daily lif
 <!-- Div Seccion de botones -->
     
     <div id="botones" class="container" style="display:none">
-    <h1>Hello, world!</h1>
-    <button type="button" class="btn btn-dark letra">A</button>
-    <button type="button" class="btn btn-dark letra">B</button>
-    <button type="button" class="btn btn-dark letra">C</button>
-    <button type="button" class="btn btn-dark letra">D</button>
-    <button type="button" class="btn btn-dark letra">E</button>
-    <button type="button" class="btn btn-dark letra">F</button>
-    <button type="button" class="btn btn-dark letra">G</button>
-    <hr>
-    <button type="button" class="btn btn-dark letra">H</button>
-    <button type="button" class="btn btn-dark letra">I</button>
-    <button type="button" class="btn btn-dark letra">J</button>
-    <button type="button" class="btn btn-dark letra">K</button>
-    <button type="button" class="btn btn-dark letra">L</button>
-    <button type="button" class="btn btn-dark letra">M</button>
-    <button type="button" class="btn btn-dark letra">N</button>
-    <hr>
-    <button type="button" class="btn btn-dark letra">O</button>
-    <button type="button" class="btn btn-dark letra">P</button>
-    <button type="button" class="btn btn-dark letra">Q</button>
-    <button type="button" class="btn btn-dark letra">R</button>
-    <button type="button" class="btn btn-dark letra">S</button>
-    <button type="button" class="btn btn-dark letra">T</button>
-    <button type="button" class="btn btn-dark letra">U</button>
-    <hr>
-    <button type="button" class="btn btn-dark letra">V</button>
-    <button type="button" class="btn btn-dark letra letra">X</button>
-    <button type="button" class="btn btn-dark letra">Y</button>
-    <button type="button" class="btn btn-dark letra">Z</button>
-    <button type="button" class="btn btn-dark letra">1</button>
-    <button type="button" class="btn btn-dark letra">2</button>
-    <button type="button" class="btn btn-dark letra">3</button>
+    <h1>Hello, world!</h1><hr>
+    <!--input id="_1" type="button" class="btn btn-dark letra" onclick="addLetter(this.value,this.id)" value="*">
+    <button id="_2" type="button" class="btn btn-dark letra" onclick="addLetter(this.innerHTML,this.id)">B</button>
+    <button id="_3" type="button" class="btn btn-dark letra" onclick="addLetter(this.innerHTML,this.id)">C</button>
+    <button id="_4" type="button" class="btn btn-dark letra">D</button>
+    <button id="_5"  type="button" class="btn btn-dark letra">E</button>
+    <button id="_6"  type="button" class="btn btn-dark letra">F</button>
+    <button id="_7"  type="button" class="btn btn-dark letra">G</button>
+    <br><br>
+    <button id="_8"  type="button" class="btn btn-dark letra">H</button>
+    <button id="_9"  type="button" class="btn btn-dark letra">I</button>
+    <button id="_10" type="button" class="btn btn-dark letra">J</button>
+    <button id="_11"  type="button" class="btn btn-dark letra">K</button>
+    <button id="_12" type="button" class="btn btn-dark letra">L</button>
+    <button id="_13"  type="button" class="btn btn-dark letra">M</button>
+    <button id="_14" type="button" class="btn btn-dark letra">N</button>
+    <br><br>
+    <button id="_15" type="button" class="btn btn-dark letra">O</button>
+    <button id="_16" type="button" class="btn btn-dark letra">P</button>
+    <button id="_17" type="button" class="btn btn-dark letra">Q</button>
+    <button id="_18" type="button" class="btn btn-dark letra">R</button>
+    <button id="_19" type="button" class="btn btn-dark letra">S</button>
+    <button id="_20" type="button" class="btn btn-dark letra">T</button>
+    <button id="_21" type="button" class="btn btn-dark letra">U</button>
+    <br><br>
+    <button id="_22" type="button" class="btn btn-dark letra">V</button>
+    <button id="_23" type="button" class="btn btn-dark letra letra">X</button>
+    <button id="_24" type="button" class="btn btn-dark letra">Y</button>
+    <button id="_25" type="button" class="btn btn-dark letra">Z</button>
+    <button id="_26" type="button" class="btn btn-dark letra">1</button>
+    <button id="_27" type="button" class="btn btn-dark letra">2</button>
+    <button id="_28" type="button" class="btn btn-dark letra">3</button-->
     </div>
     </center>
 
