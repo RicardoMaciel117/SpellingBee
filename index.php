@@ -43,7 +43,7 @@
           <a class="dropdown-item difficulty" href="#">RANDOM</a>
         </div>
       </li>
-    
+
     </ul>
   </div>
 </nav>
@@ -54,7 +54,7 @@
 <!-- Ventanas pricipales **-->
 
 
-  
+
 <!-- Div Pantalla principal -->
     <div id="jumbo" class="jumbotron" style="display:block">
     <center>
@@ -71,7 +71,7 @@ Exercise your word recognition with an extensive vocabulary useful for daily lif
 
 <main role="main" id="mainCards">
 
-  
+
 
       <div id="cards" class="album py-5" >
         <div class="container">
@@ -150,56 +150,19 @@ Exercise your word recognition with an extensive vocabulary useful for daily lif
     <div id="speaker" class="container" style="display:none;">
 
         <h1 class="lab">Push the speaker to start<hr></h1>
-      
+
 
 <a id="spk"  class="pop" data-toggle="popover" data-placement="top" title="Attempts"><img id="speakerImg"  width="155" height="155" onclick="getData()" src="imgs/speaker.png" ></a>
 <button id="lets" type="button" class="btn btn-success" onclick="ocultarSpeaker()">Let's go</button>
-          
+
     </div>
 
 <!-- Div Seccion de botones -->
-    
+
     <div id="botones" class="container" style="display:none">
-    <h1>Hello, world!</h1><hr>
-    <!--input id="_1" type="button" class="btn btn-dark letra" onclick="addLetter(this.value,this.id)" value="*">
-    <button id="_2" type="button" class="btn btn-dark letra" onclick="addLetter(this.innerHTML,this.id)">B</button>
-    <button id="_3" type="button" class="btn btn-dark letra" onclick="addLetter(this.innerHTML,this.id)">C</button>
-    <button id="_4" type="button" class="btn btn-dark letra">D</button>
-    <button id="_5"  type="button" class="btn btn-dark letra">E</button>
-    <button id="_6"  type="button" class="btn btn-dark letra">F</button>
-    <button id="_7"  type="button" class="btn btn-dark letra">G</button>
-    <br><br>
-    <button id="_8"  type="button" class="btn btn-dark letra">H</button>
-    <button id="_9"  type="button" class="btn btn-dark letra">I</button>
-    <button id="_10" type="button" class="btn btn-dark letra">J</button>
-    <button id="_11"  type="button" class="btn btn-dark letra">K</button>
-    <button id="_12" type="button" class="btn btn-dark letra">L</button>
-    <button id="_13"  type="button" class="btn btn-dark letra">M</button>
-    <button id="_14" type="button" class="btn btn-dark letra">N</button>
-    <br><br>
-    <button id="_15" type="button" class="btn btn-dark letra">O</button>
-    <button id="_16" type="button" class="btn btn-dark letra">P</button>
-    <button id="_17" type="button" class="btn btn-dark letra">Q</button>
-    <button id="_18" type="button" class="btn btn-dark letra">R</button>
-    <button id="_19" type="button" class="btn btn-dark letra">S</button>
-    <button id="_20" type="button" class="btn btn-dark letra">T</button>
-    <button id="_21" type="button" class="btn btn-dark letra">U</button>
-    <br><br>
-    <button id="_22" type="button" class="btn btn-dark letra">V</button>
-    <button id="_23" type="button" class="btn btn-dark letra letra">X</button>
-    <button id="_24" type="button" class="btn btn-dark letra">Y</button>
-    <button id="_25" type="button" class="btn btn-dark letra">Z</button>
-    <button id="_26" type="button" class="btn btn-dark letra">1</button>
-    <button id="_27" type="button" class="btn btn-dark letra">2</button>
-    <button id="_28" type="button" class="btn btn-dark letra">3</button-->
+    <h1 id="catg">Hello, worldt!</h1><hr>
     </div>
     </center>
-
-
-
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
