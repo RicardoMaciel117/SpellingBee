@@ -1,7 +1,7 @@
 body {
-  background: -webkit-linear-gradient(right, #1382A4,#6536db);
-  background: -o-linear-gradient(left, #1382A4,#0e8db5);
-  background: linear-gradient(left, #1382A4,#0e8db5);
+  background: -webkit-linear-gradient(right, #1094bc,#7644f4);
+  background: -o-linear-gradient(left, #1094bc,#7644f4);
+  background: linear-gradient(left, #1094bc,#7644f4);
 }
 .letra{
   font-size: 20px;
@@ -44,11 +44,36 @@ body {
   padding: -16px;
   font-weight: bold;
   font-size: 17px;
-  position: fixed; 
+  position: fixed;
   opacity: 0.0;
 }
 
 h1 {
   font-weight: bold;
   text-shadow: 0 1px 2px white;
+}
+
+.infoScore {
+  font-weight: bold;
+  text-shadow: 0 1px 2px white;
+  font-size: 30px;
+}
+
+.numScore {
+	text-shadow: 0 0 0;
+}
+
+.dvScore {
+	display: inline-block;
+}
+
+#contScore{
+  -webkit-transition-duration:0.6s;
+  border: solid;
+  border-radius: 5px;
+  border-style: dashed;
+  background-color: rgba(0, 0, 0, 0.16);
+  padding: 5px;
+  max-width: 620px;
+  display: inline-block;
 }
