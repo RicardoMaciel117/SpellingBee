@@ -30,22 +30,44 @@ body {
   -webkit-transform: scale(0.9);
 }
 
-.jumbotron {
-  padding: 20px;
-}
-
 #cards {
   padding: 10px;
 }
 
-#lets {
-  margin-top: 55px;
-  margin-left: 7px;
-  padding: -16px;
-  font-weight: bold;
-  font-size: 17px;
-  position: fixed;
-  opacity: 0.0;
+#jumbo {
+	background: rgba(255,255,255,0.9);
+	border: solid;
+	border-radius: 5px;
+	border-style: dashed;
+	display: inline-block;
+	padding: 15px;
+	box-shadow: 0 0 15px black;	
+}
+
+#gSt{
+	background: #834ed0;
+	font-weight: bold; 
+	color: white; 
+	text-shadow: 0 0 6px black; 
+	font-size: 20px;
+}
+
+#gSt:hover{
+	box-shadow: 0 0 15px black;
+}
+.spkItems {
+	margin-top: 55px;
+	margin-left: 7px;
+	padding: -16px;
+	font-weight: bold;
+	font-size: 17px;
+	position: fixed;
+	opacity: 0.0;
+}
+
+#help {
+	margin-top: 100px;
+	margin-left: 20px;
 }
 
 h1 {
@@ -54,6 +76,7 @@ h1 {
 }
 
 .infoScore {
+	margin-bottom: 2px;
   font-weight: bold;
   text-shadow: 0 1px 2px white;
   font-size: 30px;
@@ -74,6 +97,6 @@ h1 {
   border-style: dashed;
   background-color: rgba(0, 0, 0, 0.16);
   padding: 5px;
-  max-width: 620px;
   display: inline-block;
+  
 }
